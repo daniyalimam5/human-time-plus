@@ -1,0 +1,47 @@
+import type { LocaleDefinition } from './types';
+
+export const en: LocaleDefinition = {
+  code: 'en',
+  justNow: 'just now',
+  past: (phrase) => `${phrase} ago`,
+  future: (phrase) => `in ${phrase}`,
+  units: {
+    second: { one: 'second', other: 'seconds' },
+    minute: { one: 'minute', other: 'minutes' },
+    hour: { one: 'hour', other: 'hours' },
+    day: { one: 'day', other: 'days' },
+    week: { one: 'week', other: 'weeks' },
+    month: { one: 'month', other: 'months' },
+    year: { one: 'year', other: 'years' },
+  },
+  durationUnits: {
+    day: { one: 'day', other: 'days' },
+    hour: { one: 'hour', other: 'hours' },
+    minute: { one: 'minute', other: 'minutes' },
+    second: { one: 'second', other: 'seconds' },
+  },
+  durationCompactUnits: {
+    day: 'd',
+    hour: 'h',
+    minute: 'm',
+    second: 's',
+  },
+  durationJoiner: ', ',
+  monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  monthsLong: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
+  weekdaysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  weekdaysLong: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+};
